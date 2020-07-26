@@ -53,7 +53,7 @@
         count($adr) > 1 ? $item['address']['city'] = $adr[1] : $item['address']['city'] = '';
         count($adr) > 0 ? $item['address']['province'] = $adr[0] : $item['address']['province'] = '';
         // $item['address']['country'] = '日本';
-        $item['address']['country'] = strval( $cand->address );
+        $item['address']['country'] = str_replace('/', ' ', $cand->address );
         $item['address']['country_code'] = 'jp';
         array_push($arr, $item);
         if( ++$count > 9 ) {
