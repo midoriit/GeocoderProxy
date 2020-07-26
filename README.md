@@ -4,7 +4,7 @@
 * 以下のような流れになります。
 
 ```
-クライアント ⇒ (q=住所) ⇒ GeocoderProxy ⇒ (?addr=住所) ⇒ CSIS ⇒ (XML) ⇒ GeocoderProxy ⇒ (JSON) ⇒ クライアント
+クライアント ⇒ (?q=住所) ⇒ GeocoderProxy ⇒ (?addr=住所) ⇒ CSIS ⇒ (XML) ⇒ GeocoderProxy ⇒ (JSON) ⇒ クライアント
 ```
 * [Leaflet](https://leafletjs.com/)のプラグイン [Leaflet Control Geocoder](https://github.com/perliedman/leaflet-control-geocoder) で動作確認しました。
 * 35.658099, 139.741357 という形式で緯度経度が渡されたときは、ジオコーダを呼び出さずにそのままの値を返します。
