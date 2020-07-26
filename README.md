@@ -11,6 +11,7 @@
 
 ## 使用法
 * search.php と .htaccess をWebサーバに設置します。.htaccess は、拡張子なしで search.php をアクセス可能にするためのものです。
+* 利用する際は、CSISシンプルジオコーディング実験の[参加規約](http://newspat.csis.u-tokyo.ac.jp/geocode/modules/geocode/index.php?content_id=2)に従って下さい。
 
 ### Leaflet Control Geocoder の設定
 * L.Control.geocoder の geocoder オプションで L.Control.Geocoder.Nominatim を指定し、その serviceUrl オプションで GeocoderProxy を設置したサーバーを指定します。
